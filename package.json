@@ -1,12 +1,14 @@
 {
-  "name": "sports-grid",
+  "name": "tools",
   "version": "1.0.0-alpha.1",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "db:push": "drizzle-kit push:pg",
+    "db:studio": "drizzle-kit studio",
+    "dev": "next dev",
+    "env:pull": "cd ../../ && vercel env pull --environment=development ./packages/pwa/.env",
+    "start": "next start"
   },
   "dependencies": {
     "@auth/core": "^0.30.0",
